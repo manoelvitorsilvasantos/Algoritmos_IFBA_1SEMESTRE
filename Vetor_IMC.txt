@@ -48,3 +48,11 @@ int main(){
 
 	printf("\n A pessoa mais Velha tem [%d], seu IMC foi [%2.1f]\n", maior, imcMax); // imprime a idade da pessoa mais velha e seu imc
 	printf("\n A pessoa mais Nova tem [%d], seu IMC foi [%2.1f]\n\n",  menor, imcMin); // imprime  a idade da pessoa mais nova e seu imc
+
+
+	system("pause");
+	return 0;
+
+}
+
+
