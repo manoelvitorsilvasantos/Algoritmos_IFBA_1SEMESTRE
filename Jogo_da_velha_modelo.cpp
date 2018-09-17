@@ -29,7 +29,7 @@ int main(){
 	do{
 		setlocale(LC_ALL, "Portuguese");
 		limpar();
-		printf("\n\t >> Digite um n˙mero correspondente a opÁ„o << \n");
+		printf("\n\t >> Digite um n√∫mero correspondente a op√ß√£o << \n");
 		printf("\n\t===================================\n");
 		printf("\n\t [1] - JOGAR					   \n");
 		printf("\n\t [2] - CREDITOS					   \n");
@@ -44,11 +44,11 @@ int main(){
 				case 0: exit(0);
 				break;
 				case 1:
-				printf("\n\t >> [ATE«√O] << \n"); 
+				printf("\n\t >> [ATE√á√ÉO] << \n"); 
 				printf("\n\tPORFAVOR, DEIXE A TELA MAXIMAZADA DO PROMPT,\n");
 				printf("\n\tPARA QUE TODOS TEXTO SEJA VISUALIZADO.\n");
 				printf("\n\t\n");
-				printf("\n\t >> Aperte qualquer [BOT√O] para continuar! << \n");
+				printf("\n\t >> Aperte qualquer [BOT√ÉO] para continuar! << \n");
 				pause();
 				jogar();
 				break;
@@ -60,7 +60,7 @@ int main(){
 	}while(opcao > 0);
 
     setlocale(LC_ALL, "Portuguese");
-    printf("\n\t >> Aperte qualquer bot„o para encerrar. << \n");
+    printf("\n\t >> Aperte qualquer bot√£o para encerrar. << \n");
 	pause();
 	return 0;
 
@@ -126,7 +126,7 @@ void jogar(void){
 
 			//essa condicao verifica se o numero de vez e a penultimo valo.
 
-			if(vezes == 1) printf("\n\t⁄ltima jogada.\n");
+			if(vezes == 1) printf("\n\t√öltima jogada.\n");
 
 
 
@@ -140,12 +140,12 @@ void jogar(void){
 
                 if(cont >= 1){
                 	limpar();
-                    printf("\n\tPosiÁ„o Inv·lida, Tente Novamente!\n");
+                    printf("\n\tPosi√ß√£o Inv√°lida, Tente Novamente!\n");
                 }
 
                	// MOSTRA O NUMEROS DE VEZES, E AINDA QUANTOS ACERTOS COM X OU O FORAM FEITOS.
                 printf("\n\t========================================\n");
-				printf("\n\tN˙mero de vezes [%i]\n", vezes);
+				printf("\n\tN√∫mero de vezes [%i]\n", vezes);
 				acertos(vX, vO);
 				printf("\n\t========================================\n");
 
@@ -184,7 +184,7 @@ void jogar(void){
         	}
 
 			//essa condicao verifica se o numero de vez e a penultimo valo.
-			if(vezes == 2) printf("\n\t⁄ltima jogada.\n");
+			if(vezes == 2) printf("\n\t√öltima jogada.\n");
 
 			//repete enquanto as posicoes na matriz estiver preenchido c/ X e O.
 
@@ -192,12 +192,12 @@ void jogar(void){
 
                 if(cont >= 1){
             		limpar();
-                    printf("\n\tPosiÁ„o Inv·lida, Tente Novamente!\n");
+                    printf("\n\tPosi√ß√£o Inv√°lida, Tente Novamente!\n");
                 }
 
 
                 printf("\n\t========================================\n");
-				printf("\n\tN˙mero de vezes [%i]\n", vezes);
+				printf("\n\tN√∫mero de vezes [%i]\n", vezes);
 				acertos(vX, vO);
 				printf("\n\t========================================\n");
 
@@ -229,15 +229,15 @@ void jogar(void){
     if(vezes == 0){
 
         printf("\n\t DEU EMPATE!!! \n");
-        printf("\n\tEndereÁo do ponteiro = %p\n", p);
+        printf("\n\tEndere√ßo do ponteiro = %p\n", p);
         printf("\n\t\n");
     }
 	pause();
 }
 /*
 
-	Verifica sem algum completou alguma linha, coluna ou diagonais, caso o usu·rio complete ele mostra,
-	que foi o vencedor,e o endereÁo do ponteiro, da coordenadas da matriz[0][0].
+	Verifica sem algum completou alguma linha, coluna ou diagonais, caso o usu√°rio complete ele mostra,
+	que foi o vencedor,e o endere√ßo do ponteiro, da coordenadas da matriz[0][0].
 
 */
 
@@ -249,18 +249,18 @@ void vencedor(int vezes, char*ponteiro, char m[dim][dim], char nome1[], char nom
         if(m[i][0] == X && m[i][1] == X  && m[i][2] == X){
             vezes = 0;
 
-           	printf("\n\t %s, VocÍ Venceu o Jogo\n", nome1);
+           	printf("\n\t %s, Voc√™ Venceu o Jogo\n", nome1);
             printf("\n\tENDERECO do ponteiro = %p\n", ponteiro );
-            printf("\n\tParabÈns...\n");
+            printf("\n\tParab√©ns...\n");
         }
     }
     //colunas
     for(int i = 0; i < dim; i++){
         if(m[0][i] == X && m[1][i] == X  && m[2][i] == X){
             vezes = 0;
-            printf("\n\t %s, VocÍ Venceu o Jogo\n", nome1);
+            printf("\n\t %s, Voc√™ Venceu o Jogo\n", nome1);
             printf("\n\tENDERECO do ponteiro = %p\n", ponteiro );
-            printf("\n\tParabÈns...\n");
+            printf("\n\tParab√©ns...\n");
         }
     }
 
@@ -268,47 +268,47 @@ void vencedor(int vezes, char*ponteiro, char m[dim][dim], char nome1[], char nom
     for(int i = 0; i < dim; i++){
         if(m[i][0] == O && m[i][1] == O && m[i][2] == O){
             vezes = 0;
-            printf("\n\t %s, VocÍ Venceu o Jogo\n", nome2);
+            printf("\n\t %s, Voc√™ Venceu o Jogo\n", nome2);
             printf("\n\tENDERECO do ponteiro = %p\n", ponteiro );
-            printf("\n\tParabÈns...\n");
+            printf("\n\tParab√©ns...\n");
         }
     }
     //colunas
     for(int i = 0; i < dim; i++){
         if(m[0][i] == O && m[1][i] == O  && m[2][i] == O){
             vezes = 0;
-            printf("\n\t %s, VocÍ Venceu o Jogo\n", nome2);
+            printf("\n\t %s, Voc√™ Venceu o Jogo\n", nome2);
             printf("\n\tENDERECO do ponteiro = %p\n", ponteiro );
-            printf("\n\tParabÈns...\n");
+            printf("\n\tParab√©ns...\n");
         }
     }
 
     //diagonais X
     if(m[0][0] == X && m[1][1] == X && m[2][2] == X){
         vezes= 0;
-       	printf("\n\t %s, VocÍ Venceu o Jogo\n", nome1);
+       	printf("\n\t %s, Voc√™ Venceu o Jogo\n", nome1);
         printf("\n\tENDERECO do ponteiro = %p\n", ponteiro );
-        printf("\n\tParabÈns...\n");
+        printf("\n\tParab√©ns...\n");
     }
     else if(m[0][2] == X && m[1][1] == X && m[2][0] == X){
         vezes= 0;
-        printf("\n\t %s, VocÍ Venceu o Jogo\n", nome1);
+        printf("\n\t %s, Voc√™ Venceu o Jogo\n", nome1);
         printf("\n\tENDERECO do ponteiro = %p\n", ponteiro );
-        printf("\n\tParabÈns...\n");
+        printf("\n\tParab√©ns...\n");
     }
 
     //diagonais O
     else if(m[0][0] == O && m[1][1] == O && m[2][2] == O){
         vezes= 0;
-        printf("\n\t %s, VocÍ Venceu o Jogo\n", nome2);
+        printf("\n\t %s, Voc√™ Venceu o Jogo\n", nome2);
         printf("\n\tENDERECO do ponteiro = %p\n", ponteiro );
-        printf("\n\tParabÈns...\n");
+        printf("\n\tParab√©ns...\n");
     }
     else if(m[0][2] == O && m[1][1] == O && m[2][0] == O){
         vezes= 0;
-        printf("\n\t %s, VocÍ Venceu o Jogo\n", nome2);
+        printf("\n\t %s, Voc√™ Venceu o Jogo\n", nome2);
         printf("\n\tENDERECO do ponteiro = %p\n", ponteiro );
-        printf("\n\tParabÈns...\n");
+        printf("\n\tParab√©ns...\n");
     }
 
 
@@ -320,16 +320,16 @@ void vencedor(int vezes, char*ponteiro, char m[dim][dim], char nome1[], char nom
 	}
 }
 /*
-	Pega os n˙meros de acertos com a Letra X e O, e mostra quantas letras j· foi inserida.
+	Pega os n√∫meros de acertos com a Letra X e O, e mostra quantas letras j√° foi inserida.
 */
 int acertos(int vx, int vo ){
 
-	return printf("\n\tN˙meros de acertos para X, foi %d\n\n\tN˙meros de acertos para O, foi %d \n", vx, vo);
+	return printf("\n\tN√∫meros de acertos para X, foi %d\n\n\tN√∫meros de acertos para O, foi %d \n", vx, vo);
 
 }
 /*
 	Insere ou um LETRA X ou LETRA O, dentro da matriz, de acordo com o valor id do jogador,
-	dentro da linha e coluna fornecido a funÁ„o.
+	dentro da linha e coluna fornecido a fun√ß√£o.
 */
 void insere(int linhas, int colunas, int id, char matriz[dim][dim]){
 
@@ -352,7 +352,7 @@ void insere(int linhas, int colunas, int id, char matriz[dim][dim]){
 
 
 }
-/* Mostra para o us˙ario, a matriz do jogo da velha. */
+/* Mostra para o us√∫ario, a matriz do jogo da velha. */
 void EXIBIR(char matriz[dim][dim]){
 	printf("\n\t	Coordenadas.\n");
 	printf("\n\t\n");
@@ -366,20 +366,20 @@ void EXIBIR(char matriz[dim][dim]){
 	printf("\n\t\n");
 }
 
-/* D· uma pausa na execuÁ„o dos comandos ou funÁıes, antes dessa funÁ„o. */
+/* D√° uma pausa na execu√ß√£o dos comandos ou fun√ß√µes, antes dessa fun√ß√£o. */
 void pause(void){
 	getch();
 }
 
 
-/* Respons·vel por limpar o screen da tela.*/
+/* Respons√°vel por limpar o screen da tela.*/
 void limpar(void){
 	system("cls");
 }
 
 /*
-	Nesse procedimento, e mostrado para o usu·rio,
-	algumas informaÁıes a respeito de quem desenvolveu esse projeto.
+	Nesse procedimento, e mostrado para o usu√°rio,
+	algumas informa√ß√µes a respeito de quem desenvolveu esse projeto.
 
 */
 void creditos(void){
@@ -388,23 +388,23 @@ void creditos(void){
     setlocale(LC_ALL, "Portuguese");
 	printf("\n\t=============================================\n");
 	printf("\n\t|                                           |\n");
-    printf("\n\t|    PROJETO JOGO DA VELHA                  |\n");
-    printf("\n\t|                                           |\n");
-    printf("\n\t|    AULA DE ALGORITMOS E PROGRAMA«√O       |\n");
-    printf("\n\t|    ORIENTADORA LAIS FARIAS ALVES          |\n");
-    printf("\n\t|    EQUIPE DE DESENVOLVIMENTO              |\n");
-    printf("\n\t|    EDENILTON SILVA PEREIRA FILHO          |\n");
-    printf("\n\t|    HIANE FERNANDES                        |\n");
-    printf("\n\t|    MATEUS DE SOUZA NOVAES                 |\n");
-    printf("\n\t|    MANOEL VITOR PAU FERRO                 |\n");
-    printf("\n\t|                                           |\n");
-    printf("\n\t|    TODOS DIREITOS RESERVADOS AO IFBA      |\n");
-    printf("\n\t|                                           |\n");
-    printf("\n\t|                                           |\n");
+    	printf("\n\t|    PROJETO JOGO DA VELHA                  |\n");
+    	printf("\n\t|                                           |\n");
+    	printf("\n\t|    AULA DE ALGORITMOS E PROGRAMA√á√ÉO       |\n");
+    	printf("\n\t|    ORIENTADORA LAIS 	                |\n");
+    	printf("\n\t|    EQUIPE DE DESENVOLVIMENTO              |\n");
+    	printf("\n\t|    EDENILTON 		                |\n");
+    	printf("\n\t|    HIANE 		                        |\n");
+    	printf("\n\t|    MATEUS 	                        |\n");
+    	printf("\n\t|    MANOEL 	                        |\n");
+    	printf("\n\t|                                           |\n");
+    	printf("\n\t|    TODOS DIREITOS RESERVADOS AO IFBA      |\n");
+    	printf("\n\t|                                           |\n");
+    	printf("\n\t|                                           |\n");
 	printf("\n\t=============================================\n");
 	printf("\n\t\n");
 
-	printf("\n\t >> Aperte qualquer bot„o para voltar ao MENU. << \n");
+	printf("\n\t >> Aperte qualquer bot√£o para voltar ao MENU. << \n");
 	pause();
 }
 
